@@ -36,7 +36,7 @@ import {
               <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
                 <MDBNavbarItem>
                   <MDBNavbarLink active aria-current='page'>
-                    <Link to={'/Home'}>Home</Link> 
+                    <Link to={'/home'}>Home</Link> 
                   </MDBNavbarLink>
                 </MDBNavbarItem>
                 <MDBNavbarItem>

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
   
   export default function Home() {
-    const [showBasic, setShowBasic] = useState(false);
+    // const [showBasic, setShowBasic] = useState(false);
   
     return (
       <>

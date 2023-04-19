@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BtnGroup from './BtnGroup';
+import BtnGroup2 from './btngroup2';
   
   export default function BtnRight() {
     // const [showBasic, setShowBasic] = useState(false);
@@ -7,7 +7,7 @@ import BtnGroup from './BtnGroup';
     return (
       <>
         <h1>Right Button Clicked</h1>
-        <BtnGroup/>
+        <BtnGroup2/>
       </>
       
     );
