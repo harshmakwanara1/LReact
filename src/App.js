@@ -15,6 +15,13 @@ import BtnLeft from './ComComponent/BtnLeft';
 import BtnRight from './ComComponent/BtnRight';
 import BtnMid from './ComComponent/BtnMid';
 import BtnGroup from './ComComponent/BtnGroup';
+import ClassMenu from './Components/ClassComponents/ClassMenu';
+import ClassIntro from './Components/ClassComponents/ClassIntro';
+import JsxComponent from './Components/ClassComponents/JsxComponent';
+import PropsInClass from './Components/ClassComponents/PropsInClass';
+import StateInClassCompo from './Components/ClassComponents/StateInClass';
+import FunctionalCompoMenu from './Components/FunctionalComponent/FunctionalCompoMenu'
+import FetchApi from './Components/FunctionalComponent/FetchApi';
 
 const app = createBrowserRouter([
   {
@@ -31,8 +38,7 @@ const app = createBrowserRouter([
         children:[
           {
             path:"/about/btngroup",
-            element:<BtnGroup/>,
-
+            element:<BtnGroup/>,  
           },
           {
             path:"/about/btnleft",
@@ -64,11 +70,45 @@ const app = createBrowserRouter([
       },
       {
         path:"/contact",
-        element:<><Contact/></>,
+        element:<Contact/>,
       },
       {
         path:"/example",
-        element:<><Example/></>,
+        element:<Example/>,
+        children:[
+          {
+            path:"classcomponent",
+            element:<ClassMenu/>,
+            children:[
+              {
+                path:"classintro",
+                element:<ClassIntro/>
+              },
+              {
+                path:"jsxcompo",
+                element:<JsxComponent/>
+              },
+              {
+                path:"propsinclass",
+                element:<PropsInClass/>
+              },
+              {
+                path:"stateinclass",
+                element:<StateInClassCompo/>
+              },
+            ]
+          },
+          {
+            path:"functionalcomponent",
+            element:<FunctionalCompoMenu/>,
+            children:[
+              {
+                path:"fetchapi",
+                element:<FetchApi/>,
+              },
+            ]
+          },
+        ]
       }
     ]
   },

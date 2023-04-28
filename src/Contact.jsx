@@ -1,8 +1,7 @@
 
-import React, { useState } from 'react';
+import React from 'react';
   
   export default function Contact() {
-    const [showBasic, setShowBasic] = useState(false);
   
     return (
       <>

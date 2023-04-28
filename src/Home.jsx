@@ -1,7 +1,6 @@
 import React from 'react';
   
   export default function Home() {
-    // const [showBasic, setShowBasic] = useState(false);
   
     return (
       <>
@@ -10,4 +9,3 @@ import React from 'react';
       
     );
   }
-  
