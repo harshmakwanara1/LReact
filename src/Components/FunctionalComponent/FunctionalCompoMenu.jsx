@@ -9,6 +9,7 @@ class FunctionalCompoMenu extends Component {
 
                 <ul>
                     <li><Link to="fetchapi">FetchApi</Link></li>
+                    <li><Link to="ImgApi">imgApi</Link></li>
                 </ul>
                 </div>
             </div>

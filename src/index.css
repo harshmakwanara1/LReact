@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tab-border tr {
+   border-bottom: 2px solid black;
+}
+
+.tab-border td {
+  border-right: 2px solid black;
+}

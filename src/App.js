@@ -22,6 +22,7 @@ import PropsInClass from './Components/ClassComponents/PropsInClass';
 import StateInClassCompo from './Components/ClassComponents/StateInClass';
 import FunctionalCompoMenu from './Components/FunctionalComponent/FunctionalCompoMenu'
 import FetchApi from './Components/FunctionalComponent/FetchApi';
+import ImgApi from './Components/FunctionalComponent/ImgApi';
 
 const app = createBrowserRouter([
   {
@@ -105,6 +106,10 @@ const app = createBrowserRouter([
               {
                 path:"fetchapi",
                 element:<FetchApi/>,
+              },
+              {
+                path:"ImgApi",
+                element:<ImgApi/>,
               },
             ]
           },
